@@ -1,0 +1,420 @@
+body {
+  margin: 0px;
+}
+
+#main {
+  width: 1366px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 664.03px;
+  background-image: url(https://lh3.googleusercontent.com/art42j_MtDKDZzvpZ3IK3uDlXoZpyh1qn465TiDmE5oZBvjCIWWpX4jm1TXp7yxfTFFEXWJseBqoHx8q5pfC-HT6fFX6yci633YpaopL6hpSLBqjhsm04yHHMqtmqFf5b0C5H4N_dA=w2400);
+  background-size: cover;
+  background-position: center;
+}
+
+#hero::after {
+  background-color: rgba(39, 73, 109, 0.75);
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1366px;
+  height: 664px;
+}
+
+div#title {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  width: 738.86px;
+  height: 168px;
+  left: 313.58px;
+  top: 248px;
+  background: rgba(20, 40, 80, 0.8);
+  z-index: 1;
+}
+
+h1#title {
+  margin: 0px;
+  position: absolute;
+  color: #EBFCF9;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 55.9055px;
+  line-height: 82.03%;
+  top: 37.57px;
+  left: 25.14px;
+}
+
+h2#subtitle {
+  margin: 0px;
+  position: absolute;
+  color: #EBFCF9;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.4548px;
+  line-height: 71px;
+  left: 198.75px;
+  top: 81.43px;
+}
+
+#img-div {
+  margin: 0px;
+  opacity: 0;
+}
+
+#image {
+  display: block;
+  width: 720px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+h2, h3, p {
+  color: #050A14;
+}
+
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 569px;
+  background: #A1BEDD;
+}
+
+#tribute-info p {
+  width: 801.73px;
+  height: 403px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24.75px;
+  line-height: 126.03%;
+  text-align: justify;
+}
+
+#contrib-algebra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 569px;
+  background: #9FD4DF;
+}
+
+#contrib-algebra h2 {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 55.9055px;
+  line-height: 82.03%;
+}
+
+#contrib-algebra h3 {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.45px;
+  line-height: 140.62%;
+  text-align: right;
+  z-index: 2;
+}
+
+#contrib-algebra p {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24.75px;
+  line-height: 140.62%;
+  text-align: justify;
+}
+
+#algebra-underline {
+  position: absolute;
+  top: 230px;
+  left: 971px;
+  z-index: 1;
+}
+
+#contrib-arithmetic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 569px;
+  background: #8FDEEF;
+}
+
+#contrib-arithmetic h3 {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.45px;
+  line-height: 140.62%;
+  text-align: left;
+  z-index: 2;
+}
+
+#contrib-arithmetic p {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24.75px;
+  line-height: 140.62%;
+  text-align: justify;
+}
+
+#arithmetic-underline {
+  position: absolute;
+  top: 190px;
+  left: 293px;
+  z-index: 1;
+}
+
+#contrib-astronomy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 569px;
+  background: #9FD4DF;
+}
+
+#contrib-astronomy h3 {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.45px;
+  line-height: 140.62%;
+  text-align: right;
+  z-index: 2;
+}
+
+#contrib-astronomy p {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24.75px;
+  line-height: 140.62%;
+  text-align: justify;
+}
+
+#astronomy-underline {
+  position: absolute;
+  top: 173px;
+  left: 922px;
+  z-index: 1;
+}
+
+#contrib-trigonometry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 569px;
+  background: #A1BEDD;
+}
+
+#contrib-trigonometry h3 {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.45px;
+  line-height: 140.62%;
+  text-align: left;
+  z-index: 2;
+}
+
+#contrib-trigonometry p {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24.75px;
+  line-height: 140.62%;
+  text-align: justify;
+}
+
+#trigonometry-underline {
+  position: absolute;
+  top: 225px;
+  left: 298px;
+  z-index: 1;
+}
+
+#contrib-geography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 569px;
+  background: #9FD4DF;
+}
+
+#contrib-geography h3 {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.45px;
+  line-height: 140.62%;
+  text-align: right;
+  z-index: 2;
+}
+
+#contrib-geography p {
+  margin: 0px;
+  width: 801.73px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24.75px;
+  line-height: 140.62%;
+  text-align: justify;
+}
+
+#geography-underline {
+  position: absolute;
+  top: 190px;
+  left: 932px;
+  z-index: 1;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 569px;
+  background: #8FDEEF;
+}
+
+#quote p {
+  margin: 0px;
+  position: relative;
+  width: 744px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.45px;
+  line-height: 140.62%;
+  text-align: justify;
+  z-index: 2;
+}
+
+#quote footer {
+  margin: 0px;
+  position: relative;
+  left: 75px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32.4484px;
+  line-height: 140.62%;
+  text-align: right;
+  color: #050A14;
+}
+
+#quote-underline {
+  position: absolute;
+  top: 297px;
+  left: 912px;
+  z-index: 0;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 95px;
+  background: #8FDEEF;
+}
+
+#footer h2 {
+  margin: 0px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24.75px;
+  line-height: 140.62%;
+  text-align: justify;
+}
+
+a {
+  color: #60759F;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #050A14;
+}
+
+#footer p {
+  margin-bottom: 27.68px;
+  margin-top: 4px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.5483px;
+  line-height: 140.62%;
+  text-align: justify;
+}
+
+.heart {
+  position: absolute;
+  top: 49px;
+  left: 657px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  transform: rotate(45deg);
+}
+
+.heart:before, .heart:after {
+  width: 10px;
+  height: 10px;
+  content: "";
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  top: -5px;
+}
+
+.heart:before {
+  top: 0px;
+  left: -5px;
+}
