@@ -1,9 +1,6 @@
-body {
-  margin: 0px;
-}
-
-#main {
-  width: 1366px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 #hero {
@@ -11,347 +8,254 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 664.03px;
+  position: relative;
+  height: 480px;
+  
   background-image: url(https://lh3.googleusercontent.com/art42j_MtDKDZzvpZ3IK3uDlXoZpyh1qn465TiDmE5oZBvjCIWWpX4jm1TXp7yxfTFFEXWJseBqoHx8q5pfC-HT6fFX6yci633YpaopL6hpSLBqjhsm04yHHMqtmqFf5b0C5H4N_dA=w2400);
   background-size: cover;
   background-position: center;
 }
+/* @media (min-width: 576px) { #hero { height: 664px; }} */
 
 #hero::after {
-  background-color: rgba(39, 73, 109, 0.75);
   content: '';
   display: block;
   position: absolute;
-  width: 1366px;
-  height: 664px;
+  width: 100vw;
+  height: 480px;
+  background-color: rgba(39, 73, 109, 0.75);
 }
+/* @media (min-width: 576px) { #hero::after { height: 664px; }} */
 
-div#title {
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  width: 738.86px;
-  height: 168px;
-  left: 313.58px;
-  top: 248px;
+#hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4px 16px 8px 16px;
   background: rgba(20, 40, 80, 0.8);
   z-index: 1;
 }
+/* @media (min-width: 576px) { #hero-title { height: 140px; }}
+@media (min-width: 768px) { #hero-title { height: 168px; }} */
 
-h1#title {
-  margin: 0px;
-  position: absolute;
-  color: #EBFCF9;
-  font-family: Patrick Hand;
+#title {
+  font-family: "Patrick Hand";
   font-style: normal;
   font-weight: normal;
-  font-size: 55.9055px;
-  line-height: 82.03%;
-  top: 37.57px;
-  left: 25.14px;
-}
-
-h2#subtitle {
-  margin: 0px;
-  position: absolute;
+  font-size: 24px;
+  text-align: center;
   color: #EBFCF9;
-  font-family: Patrick Hand;
+}
+@media (min-width: 576px) { #title { font-size: 38px; }}
+@media (min-width: 768px) { #title { font-size: 50px; }}
+
+#subtitle {
+  font-family: "Patrick Hand";
   font-style: normal;
   font-weight: normal;
-  font-size: 43.4548px;
-  line-height: 71px;
-  left: 198.75px;
-  top: 81.43px;
+  font-size: 20px;
+  color: #EBFCF9;
 }
+/* @media (min-width: 576px) { #subtitle { font-size: 32px; }}
+@media (min-width: 768px) { #subtitle { font-size: 44px; }} */
 
 #img-div {
-  margin: 0px;
-  opacity: 0;
+  display: none;
 }
 
 #image {
   display: block;
   width: 720px;
-  max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
 
 h2, h3, p {
-  color: #050A14;
+  color: #192949;
 }
 
 #tribute-info {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 569px;
+  justify-content: center; */
+  /* height: 569px; */
+
+  padding: 16px 0;
+  overflow: auto;
   background: #A1BEDD;
 }
 
 #tribute-info p {
-  width: 801.73px;
-  height: 403px;
-  font-family: Dosis;
+  font-family: "Dosis";
   font-style: normal;
   font-weight: normal;
-  font-size: 24.75px;
-  line-height: 126.03%;
+  font-size: 18px;
+  /* font-size: 24.75px; */
   text-align: justify;
+
+  margin: 16px 24px;
 }
 
-#contrib-algebra {
-  display: flex;
+.contrib-section {
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 569px;
-  background: #9FD4DF;
+  height: 569px; */
+
+  padding: 16px 0;
+  overflow: auto;
+  background: #88A6C6;
 }
 
-#contrib-algebra h2 {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Dosis;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 55.9055px;
-  line-height: 82.03%;
-}
-
-#contrib-algebra h3 {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Patrick Hand;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 43.45px;
-  line-height: 140.62%;
-  text-align: right;
-  z-index: 2;
-}
-
-#contrib-algebra p {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Dosis;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24.75px;
-  line-height: 140.62%;
-  text-align: justify;
-}
-
-#algebra-underline {
-  position: absolute;
-  top: 230px;
-  left: 971px;
-  z-index: 1;
-}
-
-#contrib-arithmetic {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 569px;
-  background: #8FDEEF;
-}
-
-#contrib-arithmetic h3 {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Patrick Hand;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 43.45px;
-  line-height: 140.62%;
-  text-align: left;
-  z-index: 2;
-}
-
-#contrib-arithmetic p {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Dosis;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24.75px;
-  line-height: 140.62%;
-  text-align: justify;
-}
-
-#arithmetic-underline {
-  position: absolute;
-  top: 190px;
-  left: 293px;
-  z-index: 1;
-}
-
-#contrib-astronomy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 569px;
-  background: #9FD4DF;
-}
-
-#contrib-astronomy h3 {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Patrick Hand;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 43.45px;
-  line-height: 140.62%;
-  text-align: right;
-  z-index: 2;
-}
-
-#contrib-astronomy p {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Dosis;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24.75px;
-  line-height: 140.62%;
-  text-align: justify;
-}
-
-#astronomy-underline {
-  position: absolute;
-  top: 173px;
-  left: 922px;
-  z-index: 1;
-}
-
+#contrib-arithmetic,
 #contrib-trigonometry {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 569px;
   background: #A1BEDD;
 }
 
-#contrib-trigonometry h3 {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Patrick Hand;
+.contrib-header {
+  font-family: "Dosis";
   font-style: normal;
   font-weight: normal;
-  font-size: 43.45px;
-  line-height: 140.62%;
-  text-align: left;
-  z-index: 2;
+  font-size: 28px;
+  /* font-size: 55.9055px; */
+
+  margin: 0 24px;
 }
 
-#contrib-trigonometry p {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Dosis;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24.75px;
-  line-height: 140.62%;
-  text-align: justify;
-}
-
-#trigonometry-underline {
-  position: absolute;
-  top: 225px;
-  left: 298px;
-  z-index: 1;
-}
-
-#contrib-geography {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contrib-title {
   position: relative;
-  height: 569px;
-  background: #9FD4DF;
-}
 
-#contrib-geography h3 {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Patrick Hand;
+  font-family: "Patrick Hand";
   font-style: normal;
   font-weight: normal;
-  font-size: 43.45px;
-  line-height: 140.62%;
+  font-size: 26px;
+  /* font-size: 43.45px; */
   text-align: right;
-  z-index: 2;
+
+  margin: 0 24px;
+  z-index: 0;
 }
 
-#contrib-geography p {
-  margin: 0px;
-  width: 801.73px;
-  font-family: Dosis;
+.contrib-title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 10px;
+  bottom: 5px;
+  right: -5px;
+
+  border-radius: 2px;
+  transform: skew(-15deg);
+  background: #4C75A0;
+  z-index: -1;
+}
+
+.contrib-text {
+  font-family: "Dosis";
   font-style: normal;
   font-weight: normal;
-  font-size: 24.75px;
-  line-height: 140.62%;
+  font-size: 18px;
+  /* font-size: 24.75px; */
   text-align: justify;
+
+  margin: 16px 24px;
 }
 
-#geography-underline {
-  position: absolute;
-  top: 190px;
-  left: 932px;
-  z-index: 1;
+#contrib-arithmetic .contrib-title,
+#contrib-trigonometry .contrib-title {
+  text-align: left;
+}
+
+#contrib-arithmetic .contrib-title::after,
+#contrib-trigonometry .contrib-title::after {
+  left: 8px;
+  background: #6899CC;
+}
+
+#contrib-arithmetic .contrib-title::after {
+  width: 100px;
+}
+
+#contrib-astronomy .contrib-title::after {
+  width: 100px;
+}
+
+#contrib-trigonometry .contrib-title::after {
+  width: 128px;
+}
+
+#contrib-geography .contrib-title::after {
+  width: 100px;
 }
 
 #quote {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  height: 569px;
-  background: #8FDEEF;
+  position: relative; */
+
+  padding: 16px 0;
+  overflow: auto;
+  background: #223C57;
 }
 
 #quote p {
-  margin: 0px;
-  position: relative;
-  width: 744px;
-  font-family: Patrick Hand;
+  /* position: relative; */
+  /* width: 744px; */
+
+  font-family: "Patrick Hand";
   font-style: normal;
   font-weight: normal;
-  font-size: 43.45px;
-  line-height: 140.62%;
+  font-size: 24px;
+  /* font-size: 43.45px; */
   text-align: justify;
+  
+  color: #B9DBD5;
+  margin: 16px 24px 0 24px;
   z-index: 2;
 }
 
 #quote footer {
-  margin: 0px;
-  position: relative;
-  left: 75px;
-  font-family: Patrick Hand;
+  /* position: relative; */
+  /* left: 75px; */
+
+  font-family: "Patrick Hand";
   font-style: normal;
   font-weight: normal;
-  font-size: 32.4484px;
-  line-height: 140.62%;
+  font-size: 18px;
+  /* font-size: 32.4484px; */
   text-align: right;
-  color: #050A14;
+  
+  margin: 0 24px 16px 24px;
+  color: #B9DBD5;
 }
 
-#quote-underline {
+#number {
+  position: relative;
+  z-index: 1;
+}
+
+#number::after {
+  content: '';
+  display: block;
   position: absolute;
-  top: 297px;
-  left: 912px;
-  z-index: 0;
+  width: 65px;
+  height: 10px;
+  bottom: 5px;
+  left: 5px;
+
+  border-radius: 2px;
+  transform: skew(-15deg);
+  background: #537190;
+  /* background: #10A2C1; */
+  z-index: -1;
 }
 
 #footer {
@@ -359,62 +263,71 @@ h2, h3, p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  height: 95px;
-  background: #8FDEEF;
+  /* position: relative;
+  height: 95px; */
+
+  overflow: auto;
+  background: #223C57;
 }
 
 #footer h2 {
-  margin: 0px;
-  font-family: Dosis;
+  font-family: "Dosis";
   font-style: normal;
   font-weight: normal;
-  font-size: 24.75px;
-  line-height: 140.62%;
-  text-align: justify;
+  font-size: 16px;
+  /* font-size: 24.75px; */
+  text-align: center;
+
+  margin: 0 24px;
+  color: #B9DBD5;
 }
 
 a {
-  color: #60759F;
+  color: #82addb;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #050A14;
+  color: #6689ad;
 }
 
 #footer p {
-  margin-bottom: 27.68px;
+  position: relative;
+  margin-bottom: 18px;
   margin-top: 4px;
-  font-family: Dosis;
+  font-family: "Dosis";
   font-style: normal;
   font-weight: normal;
-  font-size: 19.5483px;
-  line-height: 140.62%;
+  font-size: 16px;
+  /* font-size: 19.5483px; */
   text-align: justify;
+
+  color: #B9DBD5;
 }
 
 .heart {
   position: absolute;
-  top: 49px;
-  left: 657px;
+  display: block;
+  top: 6px;
+  left: 60px;
   width: 10px;
   height: 10px;
-  background-color: red;
+  margin : 0 8px;
+  background-color: rgb(207, 89, 89);
   transform: rotate(45deg);
 }
 
-.heart:before, .heart:after {
+.heart::before, .heart::after {
   width: 10px;
   height: 10px;
   content: "";
   position: absolute;
-  background-color: red;
+  background-color: rgb(207, 89, 89);
   border-radius: 50%;
   top: -5px;
 }
 
-.heart:before {
+.heart::before {
   top: 0px;
   left: -5px;
 }
