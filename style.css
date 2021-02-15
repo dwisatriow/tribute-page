@@ -15,17 +15,17 @@
   background-size: cover;
   background-position: center;
 }
-/* @media (min-width: 576px) { #hero { height: 664px; }} */
+@media (min-width: 768px) { #hero { height: 664px; }}
 
 #hero::after {
   content: '';
   display: block;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 480px;
   background-color: rgba(39, 73, 109, 0.75);
 }
-/* @media (min-width: 576px) { #hero::after { height: 664px; }} */
+@media (min-width: 768px) { #hero::after { height: 664px; }}
 
 #hero-title {
   display: flex;
@@ -37,8 +37,6 @@
   background: rgba(20, 40, 80, 0.8);
   z-index: 1;
 }
-/* @media (min-width: 576px) { #hero-title { height: 140px; }}
-@media (min-width: 768px) { #hero-title { height: 168px; }} */
 
 #title {
   font-family: "Patrick Hand";
@@ -48,8 +46,8 @@
   text-align: center;
   color: #EBFCF9;
 }
-@media (min-width: 576px) { #title { font-size: 38px; }}
-@media (min-width: 768px) { #title { font-size: 50px; }}
+@media (min-width: 576px) { #title { font-size: 34px; }}
+@media (min-width: 768px) { #title { font-size: 44px; }}
 
 #subtitle {
   font-family: "Patrick Hand";
@@ -58,8 +56,8 @@
   font-size: 20px;
   color: #EBFCF9;
 }
-/* @media (min-width: 576px) { #subtitle { font-size: 32px; }}
-@media (min-width: 768px) { #subtitle { font-size: 44px; }} */
+@media (min-width: 576px) { #subtitle { font-size: 28px; }}
+@media (min-width: 768px) { #subtitle { font-size: 36px; }}
 
 #img-div {
   display: none;
@@ -67,9 +65,9 @@
 
 #image {
   display: block;
-  width: 720px;
+  width: auto;
+  max-width: 100%;
   height: auto;
-  margin: 0 auto;
 }
 
 h2, h3, p {
@@ -77,40 +75,41 @@ h2, h3, p {
 }
 
 #tribute-info {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
-  /* height: 569px; */
+  justify-content: center;
 
-  padding: 16px 0;
+  padding: 24px 24px;
   overflow: auto;
   background: #A1BEDD;
 }
+@media (min-width: 576px) { #tribute-info { padding: 48px 24px; }}
+@media (min-width: 768px) { #tribute-info { padding: 72px 24px; }}
 
 #tribute-info p {
   font-family: "Dosis";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  /* font-size: 24.75px; */
   text-align: justify;
 
-  margin: 16px 24px;
+  margin: 16px 0;
 }
+@media (min-width: 768px) { #tribute-info p { font-size: 20px; }}
 
 .contrib-section {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  height: 569px; */
 
-  padding: 16px 0;
+  padding: 24px 24px;
   overflow: auto;
   background: #88A6C6;
 }
+@media (min-width: 576px) { .contrib-section { padding: 48px 24px; }}
+@media (min-width: 768px) { .contrib-section { padding: 72px 24px; }}
 
 #contrib-arithmetic,
 #contrib-trigonometry {
@@ -122,10 +121,10 @@ h2, h3, p {
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
-  /* font-size: 55.9055px; */
 
-  margin: 0 24px;
+  width: 100%;
 }
+@media (min-width: 768px) { .contrib-header { font-size: 36px; }}
 
 .contrib-title {
   position: relative;
@@ -134,12 +133,12 @@ h2, h3, p {
   font-style: normal;
   font-weight: normal;
   font-size: 26px;
-  /* font-size: 43.45px; */
   text-align: right;
 
-  margin: 0 24px;
+  width: 100%;
   z-index: 0;
 }
+@media (min-width: 768px) { .contrib-title { font-size: 34px; }}
 
 .contrib-title::after {
   content: '';
@@ -161,11 +160,11 @@ h2, h3, p {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  /* font-size: 24.75px; */
   text-align: justify;
 
-  margin: 16px 24px;
+  margin: 16px 0;
 }
+@media (min-width: 768px) { .contrib-text { font-size: 20px; }}
 
 #contrib-arithmetic .contrib-title,
 #contrib-trigonometry .contrib-title {
@@ -195,47 +194,45 @@ h2, h3, p {
 }
 
 #quote {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative; */
 
-  padding: 16px 0;
+  padding: 24px 0;
   overflow: auto;
   background: #223C57;
 }
+@media (min-width: 576px) { #quote { padding: 48px 0; }}
+@media (min-width: 768px) { #quote { padding: 72px 0; }}
+
+blockquote * { max-width: 360px; }
 
 #quote p {
-  /* position: relative; */
-  /* width: 744px; */
-
   font-family: "Patrick Hand";
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  /* font-size: 43.45px; */
+  font-size: 20px;
+  line-height: 110%;
   text-align: justify;
   
-  color: #B9DBD5;
   margin: 16px 24px 0 24px;
+  color: #B9DBD5;
   z-index: 2;
 }
+@media (min-width: 768px) { #quote p { font-size: 24px; }}
 
 #quote footer {
-  /* position: relative; */
-  /* left: 75px; */
-
   font-family: "Patrick Hand";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  /* font-size: 32.4484px; */
   text-align: right;
   
   margin: 0 24px 16px 24px;
   color: #B9DBD5;
 }
+@media (min-width: 768px) { #quote footer { font-size: 22px; }}
 
 #number {
   position: relative;
@@ -246,7 +243,7 @@ h2, h3, p {
   content: '';
   display: block;
   position: absolute;
-  width: 65px;
+  width: 53px;
   height: 10px;
   bottom: 5px;
   left: 5px;
@@ -254,7 +251,6 @@ h2, h3, p {
   border-radius: 2px;
   transform: skew(-15deg);
   background: #537190;
-  /* background: #10A2C1; */
   z-index: -1;
 }
 
@@ -263,8 +259,6 @@ h2, h3, p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* position: relative;
-  height: 95px; */
 
   overflow: auto;
   background: #223C57;
@@ -274,13 +268,14 @@ h2, h3, p {
   font-family: "Dosis";
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  /* font-size: 24.75px; */
+  font-size: 14px;
   text-align: center;
 
   margin: 0 24px;
   color: #B9DBD5;
 }
+@media (min-width: 768px) { #footer h2 { font-size: 16px; }}
+
 
 a {
   color: #82addb;
@@ -298,24 +293,25 @@ a:hover, a:focus {
   font-family: "Dosis";
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  /* font-size: 19.5483px; */
+  font-size: 14px;
   text-align: justify;
 
   color: #B9DBD5;
 }
+@media (min-width: 768px) { #footer p { font-size: 16px; }}
 
 .heart {
   position: absolute;
   display: block;
   top: 6px;
-  left: 60px;
+  left: 53px;
   width: 10px;
   height: 10px;
   margin : 0 8px;
   background-color: rgb(207, 89, 89);
   transform: rotate(45deg);
 }
+@media (min-width: 768px) { .heart { left: 62px; }}
 
 .heart::before, .heart::after {
   width: 10px;
@@ -330,4 +326,14 @@ a:hover, a:focus {
 .heart::before {
   top: 0px;
   left: -5px;
+}
+
+@media (min-width: 576px) {
+  .container * { max-width: 480px; }
+  blockquote * { max-width: 440px; }
+}
+
+@media (min-width: 768px) {
+  .container * { max-width: 720px; }
+  blockquote * { max-width: 660px; }
 }
