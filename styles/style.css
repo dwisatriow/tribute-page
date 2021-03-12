@@ -145,8 +145,8 @@ h2, h3, p {
   display: block;
   position: absolute;
   width: 70px;
-  height: 10px;
-  bottom: 5px;
+  height: 8px;
+  bottom: 4px;
   right: -5px;
 
   border-radius: 2px;
@@ -154,6 +154,11 @@ h2, h3, p {
   background: #4C75A0;
   z-index: -1;
 }
+@media (min-width: 768px) { .contrib-title::after {
+  width: 90px;
+  height: 10px;
+  bottom: 6px;
+}}
 
 .contrib-text {
   font-family: "Dosis";
@@ -180,18 +185,22 @@ h2, h3, p {
 #contrib-arithmetic .contrib-title::after {
   width: 100px;
 }
+@media (min-width: 768px) {  #contrib-arithmetic .contrib-title::after { width: 130px; }}
 
 #contrib-astronomy .contrib-title::after {
   width: 100px;
 }
+@media (min-width: 768px) { #contrib-astronomy .contrib-title::after { width: 130px; }}
 
 #contrib-trigonometry .contrib-title::after {
   width: 128px;
 }
+@media (min-width: 768px) { #contrib-trigonometry .contrib-title::after { width: 168px; }}
 
 #contrib-geography .contrib-title::after {
   width: 100px;
 }
+@media (min-width: 768px) { #contrib-geography .contrib-title::after { width: 120px; }}
 
 #quote {
   display: flex;
@@ -244,8 +253,8 @@ blockquote * { max-width: 360px; }
   display: block;
   position: absolute;
   width: 53px;
-  height: 10px;
-  bottom: 5px;
+  height: 8px;
+  bottom: 3px;
   left: 5px;
 
   border-radius: 2px;
@@ -253,6 +262,12 @@ blockquote * { max-width: 360px; }
   background: #537190;
   z-index: -1;
 }
+@media (min-width: 768px) { #number::after {
+  width: 63px;
+  height: 10px;
+  bottom: 3px;
+  left: 7px;
+}}
 
 #footer {
   display: flex;
